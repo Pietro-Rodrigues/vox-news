@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>VoxNews</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="container header-wrap">
+            <a href="index.html" class="logo">
+                <span>Vox</span>
+                <strong>News</strong>
+            </a>
+            
+            <!--checkbox-->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="hamburguer">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="not1.html">Notícia 1</a></li>
+                    <li><a href="not2.html">Notícia 2</a></li>
+                    <li><a href="not3.html">Notícia 3</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    
+    
+    
+    <!-- Ticker - Ultimas Noticias -->
+    
+    <section class="ticker">
+      <div class="container">
+        <span class="ticker-label">Últimas noticias:</span>
+        <marquee behavior="scroll" direction="left">Trem descarrilha e se parte ao meio na lina amarela em São Paulp - Israel bombadeira Doha - Esposa do ex-primeiro-ministro de Nepal é queimada viva por rebeldes</marquee>
+      </div>
+    </section>
+    
+    <!-- Cabeçalho -->
+      <section>
+          <input type="text" placeholder="Buscar">
+          <input type="button" value="G1">
+          <input type="button" value="Gshow">
+          <input type="button" value="Globo.com">
+      </section>
+
+        <!--Destaques-->
+    <section class="Destaques">
+      <div class="container Destaques-grid">
+       <article class="Destaques-main">
+         <a href="Richthofen.html">
+          <div class="tag">Richthofen</div>
+          <h2>Caso Richthofen</h2>
+          <img src="data:image/jpeg;base64,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">">
+        </a>
+        </article>
+        
+        <div class="destaque-sides">
+        <article class="destaque-side1">
+          <a href="CasosCriminais.html">
+            <div class="tag">Casos Criminais</div>
+            <h2>Caso Criminais Chocantes: A Violência que Marcou a Sociedade e Gerou Pavor e Tumulto</h2>
+            <img src="https://static01.nyt.com/images/2013/06/08/us/ramirez-obit/ramirez-obit-superJumbo.jpg">
+          </a>
+        </article>
+        
+        <article class="destaque-side2">
+          <a href="Assalto.html">
+            <div class="tag">Roubo a Banco</div>
+            <h2>Roubo a Banco no Interior de São Paulo</h2>
+            <img src="https://img.freepik.com/fotos-premium/roubo-roubo-e-pessoas-conceito-ladrao-roubando-dinheiro-do-cofre-na-cena-do-crime_380164-194637.jpg?semt=ais_hybrid&w=740&q=80">
+          </a>
+        </article>
+        
+        <article class="destaque-side2">
+          <a href="NotíciasPrincipais.html">
+            <div class="tag">Assalto a Carro Forte</div>
+            <h2>Assalto a Carro Forte na Grande São Paulo</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX1sCJxzH8ahfxCdfeTSme-uF6kiFFuoQR-A&s">
+          </a>
+        </article>
+        </div>
+      </div>
+      
+      
+
+      <!-- Notícia 1 -->
+      <div class="noticias">
+      <h1 class="titulo">Acidentes na Grande São Paulo</h1>
+      </div>
+      <section>
+          <h2>Carreta carregada com 31 toneladas de sucata tomba em anel viário de Piracicaba e causa lentidão no trânsito</h2>
+          <p>Acidente ocorreu na manhã desta segunda-feira (8) no entroncamento da Rodovia Luiz de Queiroz (SP-304). Parte da carga ficou espalhada na pista.</p>
+          <div class="img-insta">
+          <img src="https://s2-g1.glbimg.com/BT5w9ZcR74fdeH-SEuSRsLQESY4=/0x0:912x498/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2025/G/H/BTt58JQ5iIKGhm7gUUnQ/cabine-carreta.jpg" alt="">
+          </div>
+      </section>
+
+      <!-- Notícia 2 -->
+      <section>
+          <h2>Acidente entre dois caminhões deixa feridos e causa congestionamento na SP-300 em Itupeva</h2>
+          <p>Segundo a Artesp, todas as faixas no sentido interior foram bloqueadas por volta das 18h45. O trecho registrou dois quilômetros de congestionamento</p>
+          <img src="https://s2-g1.glbimg.com/NmHVc8OR1V78RBIc-v1DpZHGMmU=/0x0:1176x786/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2025/x/E/A1obLbT4e0I1JYBefHAg/whatsapp-image-2025-09-08-at-20.43.55.jpeg" alt="acidente2">
+      </section>
+      
+      
+
+      <!-- Rodapé -->
+      <footer style="margin-top:40px; font-size:14px; color:#555; text-align:center; border-top: 1px solid #ddd; padding:15px;">
+         <p>@Copyright 2025</p>
+         <a href="#" style="margin:0 10px; color:#0066cc; text-decoration:none;">Princípios editoriais</a>
+         <a href="#" style="margin:0 10px; color:#0066cc; text-decoration:none;">Política de privacidade</a>
+         <a href="#" style="margin:0 10px; color:#0066cc; text-decoration:none;">Minha conta</a>
+         <a href="#" style="margin:0 10px; color:#0066cc; text-decoration:none;">Anuncie conosco</a>
+         
+         <div class="footer-botttom">
+         <p>&copy;<span id="year"></span> Todos os direitos reservados</p>
+         </div>
+      </footer>
+      <script>
+        document.getElementById('year'). textContent=new date().getFullYear();
+      </script>
+  </body>
+</html>
+
+
+
+
+
